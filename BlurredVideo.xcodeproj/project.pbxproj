@@ -12,6 +12,7 @@
 		0335F29C1FB9F55900421822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0335F29A1FB9F55900421822 /* Main.storyboard */; };
 		0335F29E1FB9F55900421822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0335F29D1FB9F55900421822 /* Assets.xcassets */; };
 		0335F2A11FB9F55900421822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0335F29F1FB9F55900421822 /* LaunchScreen.storyboard */; };
+		0335F2A91FBA0AB800421822 /* BlurredVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0335F2A81FBA0AB700421822 /* BlurredVideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0335F29D1FB9F55900421822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0335F2A01FB9F55900421822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0335F2A21FB9F55900421822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0335F2A81FBA0AB700421822 /* BlurredVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredVideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		0335F2951FB9F55900421822 /* BlurredVideo */ = {
 			isa = PBXGroup;
 			children = (
+				0335F2A81FBA0AB700421822 /* BlurredVideoView.swift */,
 				0335F2961FB9F55900421822 /* AppDelegate.swift */,
 				0335F2981FB9F55900421822 /* ViewController.swift */,
 				0335F29A1FB9F55900421822 /* Main.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				0335F2991FB9F55900421822 /* ViewController.swift in Sources */,
 				0335F2971FB9F55900421822 /* AppDelegate.swift in Sources */,
+				0335F2A91FBA0AB800421822 /* BlurredVideoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +281,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKW24GNQGV;
 				INFOPLIST_FILE = BlurredVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTreeApps.BlurredVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKW24GNQGV;
 				INFOPLIST_FILE = BlurredVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTreeApps.BlurredVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
