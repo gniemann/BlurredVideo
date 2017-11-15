@@ -13,6 +13,8 @@
 		0335F29E1FB9F55900421822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0335F29D1FB9F55900421822 /* Assets.xcassets */; };
 		0335F2A11FB9F55900421822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0335F29F1FB9F55900421822 /* LaunchScreen.storyboard */; };
 		0335F2A91FBA0AB800421822 /* BlurredVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0335F2A81FBA0AB700421822 /* BlurredVideoView.swift */; };
+		037F6C8E1FBCCC3A0008B357 /* BlurredVideoMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037F6C8D1FBCCC3A0008B357 /* BlurredVideoMetalView.swift */; };
+		037F6C911FBCD37D0008B357 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037F6C901FBCD3710008B357 /* MetalKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0335F2A01FB9F55900421822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0335F2A21FB9F55900421822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0335F2A81FBA0AB700421822 /* BlurredVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredVideoView.swift; sourceTree = "<group>"; };
+		037F6C8D1FBCCC3A0008B357 /* BlurredVideoMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredVideoMetalView.swift; sourceTree = "<group>"; };
+		037F6C901FBCD3710008B357 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037F6C911FBCD37D0008B357 /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				0335F2951FB9F55900421822 /* BlurredVideo */,
 				0335F2941FB9F55900421822 /* Products */,
+				037F6C8F1FBCD3710008B357 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +69,17 @@
 				0335F29D1FB9F55900421822 /* Assets.xcassets */,
 				0335F29F1FB9F55900421822 /* LaunchScreen.storyboard */,
 				0335F2A21FB9F55900421822 /* Info.plist */,
+				037F6C8D1FBCCC3A0008B357 /* BlurredVideoMetalView.swift */,
 			);
 			path = BlurredVideo;
+			sourceTree = "<group>";
+		};
+		037F6C8F1FBCD3710008B357 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				037F6C901FBCD3710008B357 /* MetalKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +157,7 @@
 				0335F2991FB9F55900421822 /* ViewController.swift in Sources */,
 				0335F2971FB9F55900421822 /* AppDelegate.swift in Sources */,
 				0335F2A91FBA0AB800421822 /* BlurredVideoView.swift in Sources */,
+				037F6C8E1FBCCC3A0008B357 /* BlurredVideoMetalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
