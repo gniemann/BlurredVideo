@@ -38,14 +38,16 @@ class BlurredVideoMetalView: MTKView {
 
     override init(frame frameRect: CGRect, device: MTLDevice?) {
         super.init(frame: frameRect, device: device ?? MTLCreateSystemDefaultDevice())
-        framebufferOnly = false
-        isPaused = false
-        enableSetNeedsDisplay = false
+        setup()
     }
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         device = MTLCreateSystemDefaultDevice()
+        setup()
+    }
+
+    func setup() {
         framebufferOnly = false
         isPaused = false
         enableSetNeedsDisplay = false
@@ -93,7 +95,9 @@ class BlurredVideoMetalView: MTKView {
         guard output.hasNewPixelBuffer(forItemTime: time),
               let pixbuf = output.copyPixelBuffer(forItemTime: time, itemTimeForDisplay: nil) else { return }
         let baseImg = CIImage(cvImageBuffer: pixbuf)
-        image = baseImg.clampedToExtent().applyingGaussianBlur(sigma: blurRadius).cropped(to: baseImg.extent)
+        image = baseImg.clampedToExtent()
+                        .applyingGaussianBlur(sigma: blurRadius)
+                        .cropped(to: baseImg.extent)
     }
 
     override func draw(_ rect: CGRect) {
