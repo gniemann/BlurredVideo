@@ -47,7 +47,7 @@
                                     <constraint firstItem="MuW-fv-f2X" firstAttribute="centerX" secondItem="4FL-uQ-GVV" secondAttribute="centerX" id="vWm-B0-WHg"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6R-xn-CTi" customClass="BlurredVideoView" customModule="BlurredVideo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6R-xn-CTi" customClass="BlurredVideoMPSView" customModule="BlurredVideo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="567" height="375"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>

@@ -15,6 +15,7 @@
 		0335F2A91FBA0AB800421822 /* BlurredVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0335F2A81FBA0AB700421822 /* BlurredVideoView.swift */; };
 		037F6C8E1FBCCC3A0008B357 /* BlurredVideoMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037F6C8D1FBCCC3A0008B357 /* BlurredVideoMetalView.swift */; };
 		037F6C911FBCD37D0008B357 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037F6C901FBCD3710008B357 /* MetalKit.framework */; };
+		6F2DB008F67EE352B233321D /* BlurredVideoMPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2DB342F07088DB71E877C1 /* BlurredVideoMPSView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0335F2A81FBA0AB700421822 /* BlurredVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredVideoView.swift; sourceTree = "<group>"; };
 		037F6C8D1FBCCC3A0008B357 /* BlurredVideoMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredVideoMetalView.swift; sourceTree = "<group>"; };
 		037F6C901FBCD3710008B357 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		6F2DB342F07088DB71E877C1 /* BlurredVideoMPSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredVideoMPSView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				0335F29F1FB9F55900421822 /* LaunchScreen.storyboard */,
 				0335F2A21FB9F55900421822 /* Info.plist */,
 				037F6C8D1FBCCC3A0008B357 /* BlurredVideoMetalView.swift */,
+				6F2DB342F07088DB71E877C1 /* BlurredVideoMPSView.swift */,
 			);
 			path = BlurredVideo;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				0335F2971FB9F55900421822 /* AppDelegate.swift in Sources */,
 				0335F2A91FBA0AB800421822 /* BlurredVideoView.swift in Sources */,
 				037F6C8E1FBCCC3A0008B357 /* BlurredVideoMetalView.swift in Sources */,
+				6F2DB008F67EE352B233321D /* BlurredVideoMPSView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
