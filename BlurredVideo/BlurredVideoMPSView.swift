@@ -27,7 +27,7 @@ class BlurredVideoMPSView: MTKView {
         return CIContext(mtlDevice: self.device!, options: [kCIContextWorkingColorSpace : NSNull()])
     }()
 
-    var gaussianBlur: MPSImageGaussianBlur!
+    var gaussianBlur: MPSImageGaussianBlur?
 
     var blurRadius: Double = 6.0 {
         didSet {
@@ -62,7 +62,7 @@ class BlurredVideoMPSView: MTKView {
     }
 
     func createGaussianBlur() {
-        if let device = device {
+        if let device = device, MPSSupportsMTLDevice(device) {
             gaussianBlur = MPSImageGaussianBlur(device: device, sigma: Float(blurRadius))
         }
     }
@@ -110,7 +110,7 @@ class BlurredVideoMPSView: MTKView {
               let pixbuf = output.copyPixelBuffer(forItemTime: time, itemTimeForDisplay: nil) else { return }
         let baseImg = CIImage(cvImageBuffer: pixbuf)
 
-        if MPSSupportsMTLDevice(device) {
+        if gaussianBlur != nil {
             image = baseImg
         } else {
             image = baseImg.clampedToExtent()
@@ -136,7 +136,7 @@ class BlurredVideoMPSView: MTKView {
         content.render(scaledImage, to: currentTexture, commandBuffer: commandBuffer, bounds: drawingBounds, colorSpace: colorSpace)
         commandBuffer.present(currentDrawable)
 
-        if MPSSupportsMTLDevice(device) {
+        if let gaussianBlur = gaussianBlur {
             // apply the gaussian blur with MPS
             let inplaceTexture = UnsafeMutablePointer<MTLTexture>.allocate(capacity: 1)
             inplaceTexture.initialize(to: currentTexture)
