@@ -1,9 +1,8 @@
 //
 // BlurredVideoMPSView.swift
-// fox-flagship-tvOS
 //
 // Created by Greg Niemann on 12/27/17.
-// Copyright (c) 2017 Greg Niemann. All rights reserved.
+// Copyright (c) 2017 WillowTree, Inc. All rights reserved.
 //
 
 import UIKit

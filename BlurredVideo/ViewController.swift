@@ -3,7 +3,7 @@
 //  BlurredVideo
 //
 //  Created by Greg Niemann on 11/13/17.
-//  Copyright © 2017 Greg Niemann. All rights reserved.
+//  Copyright (c) 2017 WillowTree, Inc. All rights reserved.
 //
 
 import UIKit

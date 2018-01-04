@@ -1,6 +1,5 @@
 //
 // BlurredVideoView.swift
-// fox-flagship-tvOS
 //
 // Created by Greg Niemann on 10/4/17.
 // Copyright (c) 2017 WillowTree, Inc. All rights reserved.
